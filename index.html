@@ -3,71 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C H NFC - Catálogo de Produtos</title>
+    <title>C H NFC - Placas e Tecnologia Inteligente por Aproximação</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background: #0f172a; color: #f8fafc; padding: 16px; }
-        
-        header { text-align: center; padding: 24px 0; border-bottom: 1px solid #334155; margin-bottom: 24px; }
-        .logo-img { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 2px solid #38bdf8; margin-bottom: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
-        header h1 { font-size: 24px; color: #ffffff; font-weight: 700; }
-        header p { font-size: 14px; color: #94a3b8; margin-top: 4px; }
+        body { background: #0f172a; color: #f8fafc; padding: 16px; line-height: 1.6; }
         
         .container { max-width: 600px; margin: 0 auto; }
-        .product-card { background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 16px; margin-bottom: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+        
+        header { text-align: center; padding: 30px 0; border-bottom: 1px solid #334155; margin-bottom: 24px; }
+        .logo-img { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 2px solid #38bdf8; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3); }
+        header h1 { font-size: 26px; color: #ffffff; font-weight: 700; letter-spacing: 0.5px; }
+        header p { font-size: 14px; color: #94a3b8; margin-top: 6px; }
+
+        .section-title { font-size: 18px; font-weight: 600; color: #38bdf8; margin: 24px 0 12px 0; text-transform: uppercase; letter-spacing: 1px; }
+
+        .features-box { background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 16px; margin-bottom: 24px; font-size: 13px; color: #94a3b8; }
+        .features-box ul { padding-left: 20px; }
+        .features-box li { margin-bottom: 6px; }
+
+        .product-card { background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 16px; margin-bottom: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: transform 0.2s; }
+        .product-card:hover { border-color: #38bdf8; }
         .product-title { font-size: 18px; font-weight: 600; color: #ffffff; margin-bottom: 6px; }
         .product-desc { font-size: 13px; color: #94a3b8; margin-bottom: 12px; line-height: 1.4; }
         .product-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; border-top: 1px solid #334155; padding-top: 12px; }
-        .price { font-size: 16px; font-weight: bold; color: #38bdf8; }
+        .price { font-size: 15px; font-weight: bold; color: #38bdf8; }
         
-        .btn-buy { background: #25d366; color: #ffffff; padding: 10px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; transition: background 0.2s; }
+        .btn-buy { background: #25d366; color: #ffffff; padding: 10px 18px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
         .btn-buy:active { background: #1eb857; }
 
-        .footer-note { text-align: center; font-size: 12px; color: #64748b; margin-top: 32px; line-height: 1.5; }
+        .footer-note { text-align: center; font-size: 12px; color: #64748b; margin-top: 40px; padding-bottom: 20px; line-height: 1.6; border-top: 1px solid #334155; padding-top: 20px; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <!-- Logotipo oficial redondo -->
             <img src="https://i.ibb.co/fdN3ZSXm/IMG-20261019-090559.jpg" alt="C H NFC Logo" class="logo-img">
             <h1>C H NFC</h1>
-            <p>Placas Inteligentes & Conectividade por Aproximação</p>
+            <p>Placas Inteligentes & Conectividade por Aproximação em Anajás-PA</p>
         </header>
+
+        <div class="features-box">
+            <div style="font-weight: bold; color: #fff; margin-bottom: 8px;">⚡ Como funciona a tecnologia?</div>
+            <ul>
+                <li>Sem necessidade de instalar aplicativos.</li>
+                <li>Basta aproximar o telemóvel da placa ou chip.</li>
+                <li>Redirecionamento instantâneo para o seu WhatsApp, Pix ou Catálogo.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Nossos Produtos e Soluções</div>
 
         <!-- Produto 1: Placa Inteligente -->
         <div class="product-card">
-            <div class="product-title">📇 Placa Inteligente NFC</div>
-            <div class="product-desc">Placa personalizada para comércios e profissionais. O cliente aproxima o telemóvel e abre o seu catálogo, redes sociais ou Pix instantaneamente.</div>
+            <div class="product-title">📇 Placa Inteligente NFC para Balcão</div>
+            <div class="product-desc">Placa rígida e personalizada de alta durabilidade. Ideal para balcões de atendimento, caixas e recepções. O cliente aproxima o telemóvel e abre o seu Pix, cardápio ou redes sociais na hora.</div>
             <div class="product-footer">
-                <span class="price">Consulte o Preço</span>
+                <span class="price">Sob Consulta</span>
                 <a href="https://wa.me/5594981371537?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Placa%20Inteligente%20NFC." target="_blank" class="btn-buy">Pedir no WhatsApp</a>
             </div>
         </div>
 
         <!-- Produto 2: Chip NFC Avulso -->
         <div class="product-card">
-            <div class="product-title">🏷️ Chip de NFC Avulso</div>
-            <div class="product-desc">Chip adesivo com tecnologia NFC de alta sensibilidade para colar em cartões, capas de telemóvel ou displays de atendimento.</div>
+            <div class="product-title">🏷️ Chip Adesivo NFC Avulso</div>
+            <div class="product-desc">Chip adesivo com tecnologia NFC de alta sensibilidade. Perfeito para colar no verso de cartões de visita de papel, capas de telemóvel ou displays personalizados.</div>
             <div class="product-footer">
-                <span class="price">Consulte o Preço</span>
+                <span class="price">Sob Consulta</span>
                 <a href="https://wa.me/5594981371537?text=Olá!%20Tenho%20interesse%20em%20comprar%20o%20Chip%20NFC%20avulso." target="_blank" class="btn-buy">Pedir no WhatsApp</a>
             </div>
         </div>
 
         <!-- Produto 3: Kit Completo -->
         <div class="product-card">
-            <div class="product-title">📦 Kit Completo (Placa + Chips)</div>
-            <div class="product-desc">O combo ideal para equipar o seu negócio ou revender: leva a placa principal de destaque e os chips avulsos para múltiplos acessos.</div>
+            <div class="product-title">📦 Kit Negócio Completo (Placa + Chips)</div>
+            <div class="product-desc">O combo ideal para equipar o seu estabelecimento com máximo destaque e flexibilidade: inclui a placa principal de balcão e chips avulsos para múltiplos usos.</div>
             <div class="product-footer">
-                <span class="price">Consulte o Preço</span>
+                <span class="price">Condição Especial</span>
                 <a href="https://wa.me/5594981371537?text=Olá!%20Quero%20saber%20mais%20detalhes%20sobre%20o%20Kit%20Completo." target="_blank" class="btn-buy">Pedir no WhatsApp</a>
             </div>
         </div>
 
         <div class="footer-note">
-            C H NFC • Tecnologia e Praticidade em Anajás-PA<br>
+            <strong>C H NFC</strong> • Inovação e Praticidade<br>
+            📍 Atendimento em Anajás e Região - PA<br>
             📧 E-mail: Chnfc5353@gmail.com
         </div>
     </div>
