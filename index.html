@@ -3,101 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C H NFC - Cartões e Placas Inteligentes</title>
+    <title>C H NFC - Catálogo de Produtos</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, #1f1f1f, #0a0a0a);
-            padding: 30px 20px;
-            text-align: center;
-            border-bottom: 2px solid #00ff88;
-        }
-        header h1 {
-            font-size: 2.2rem;
-            color: #00ff88;
-            margin-bottom: 5px;
-        }
-        header p {
-            color: #b0b0b0;
-            font-size: 1rem;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .card-product {
-            background: #1e1e1e;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #333;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-        .product-img {
-            width: 100%;
-            height: 220px;
-            background-color: #2a2a2a;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-            object-fit: cover;
-        }
-        .product-title {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-            color: #fff;
-        }
-        .product-desc {
-            font-size: 0.95rem;
-            color: #aaa;
-            margin-bottom: 15px;
-        }
-        .price-box {
-            background: #252525;
-            padding: 10px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        .price-retail {
-            font-size: 1.1rem;
-            color: #ccc;
-            text-decoration: line-through;
-        }
-        .price-current {
-            font-size: 1.6rem;
-            color: #00ff88;
-            font-weight: bold;
-        }
-        .price-wholesale {
-            font-size: 0.95rem;
-            color: #ffaa00;
-            margin-top: 5px;
-        }
-        .btn-whatsapp {
-            display: block;
-            width: 100%;
-            background-color: #25d366;
-            color: white;
-            text-decoration: none;
-            padding: 14px;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-align: center;
-            transition: background 0.3s;
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #0f172a; color: #f8fafc; padding: 16px; }
+        header { text-align: center; padding: 24px 0; border-bottom: 1px solid #334155; margin-bottom: 24px; }
+        header h1 { font-size: 24px; color: #ffffff; font-weight: 700; }
+        header p { font-size: 14px; color: #94a3b8; margin-top: 4px; }
+        
+        .container { max-width: 600px; margin: 0 auto; }
+        .product-card { background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 16px; margin-bottom: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+        .product-title { font-size: 18px; font-weight: 600; color: #ffffff; margin-bottom: 6px; }
+        .product-desc { font-size: 13px; color: #94a3b8; margin-bottom: 12px; line-height: 1.4; }
+        .product-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; border-top: 1px solid #334155; padding-top: 12px; }
+        .price { font-size: 16px; font-weight: bold; color: #38bdf8; }
+        
+        .btn-buy { background: #25d366; color: #ffffff; padding: 10px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; transition: background 0.2s; }
+        .btn-buy:active { background: #1eb857; }
+
+        .footer-note { text-align: center; font-size: 12px; color: #64748b; margin-top: 32px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>C H NFC</h1>
+            <p>Placas Inteligentes & Conectividade por Aproximação</p>
+        </header>
+
+        <!-- Produto 1: Placa Inteligente -->
+        <div class="product-card">
+            <div class="product-title">📇 Placa Inteligente NFC</div>
+            <div class="product-desc">Placa personalizada para comércios e profissionais. O cliente aproxima o telemóvel e abre o seu catálogo, redes sociais ou Pix instantaneamente.</div>
+            <div class="product-footer">
+                <span class="price">Consulte o Preço</span>
+                <a href="https://wa.me/5591980389036?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Placa%20Inteligente%20NFC." target="_blank" class="btn-buy">Pedir no WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Produto 2: Chip NFC Avulso -->
+        <div class="product-card">
+            <div class="product-title">🏷️ Chip de NFC Avulso</div>
+            <div class="product-desc">Chip adesivo com tecnologia NFC de alta sensibilidade para colar em cartões, capas de telemóvel ou displays de atendimento.</div>
+            <div class="product-footer">
+                <span class="price">Consulte o Preço</span>
+                <a href="https://wa.me/5591980389036?text=Olá!%20Tenho%20interesse%20em%20comprar%20o%20Chip%20NFC%20avulso." target="_blank" class="btn-buy">Pedir no WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Produto 3: Kit Completo -->
+        <div class="product-card">
+            <div class="product-title">📦 Kit Completo (Placa + Chips)</div>
+            <div class="product-desc">O combo ideal para equipar o seu negócio ou revender: leva a placa principal de destaque e os chips avulsos para múltiplos acessos.</div>
+            <div class="product-footer">
+                <span class="price">Consulte o Preço</span>
+                <a href="https://wa.me/5591980389036?text=Olá!%20Quero%20saber%20mais%20detalhes%20sobre%20o%20Kit%20Completo." target="_blank" class="btn-buy">Pedir no WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            C H NFC • Tecnologia e Praticidade em Anajás-PA
+        </div>
+    </div>
+
+</body>
+</html>
